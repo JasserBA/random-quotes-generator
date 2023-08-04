@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@800&family=Poppins:wght@300&display=swap');
+:root{
+    ---color-1 :#FFEFBA;
+    ---color-2 :#e8e8e5;
+    ---color-3 :#dfc15e;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: var(---color-1); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, var(---color-1));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, var(---color-1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container {
+    background-color: var(---color-2);
+}
+.quote-part .quote{
+    word-break: break-all;
+}
+ul li{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    border: 2px solid var(---color-3);
+    color: var(---color-3);
+    transition: all .2s ease;
+}
+ul li:hover{
+    cursor: pointer;
+    background-color: var(---color-3);
+    color: var(---color-2);
+}
+button{
+    border-radius: 30px;
+    background-color: var(---color-3);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+    .quote-part .quote{
+        word-break: normal;
+    }
+}
